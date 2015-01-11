@@ -1,8 +1,14 @@
 package cn.bvin.app.samiteholiday;
 
-public class SamiteHolidayMeta {
+import java.io.Serializable;
+
+public class SamiteHolidayMeta implements Serializable{
+
+
+	private static final long serialVersionUID = 1L;
 
 	public String title;
+	public String link;
 	
 	public String img;
 	
@@ -14,4 +20,13 @@ public class SamiteHolidayMeta {
 	public String tag;
 	
 	public String content;
+
+	@Override
+	public String toString() {
+		return "SamiteHolidayMeta [title=" + title + ", link=" + link + ", img=" + img + ", time="
+				+ time + ", category=" + category + ", author=" + author + ", visitTimes="
+				+ visitTimes + ", tag=" + tag + ", content=" + content + "]";
+	}
+
+	
 }
