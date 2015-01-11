@@ -1,9 +1,13 @@
 package cn.bvin.app.samiteholiday;
 
 import java.util.List;
+
 import cn.bvin.app.samite_holiday.R;
+
 import com.squareup.picasso.Picasso;
+
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -31,8 +35,7 @@ public class MetaListAdapter extends BaseAdapter{
 
 	@Override
 	public Object getItem(int position) {
-		// TODO Auto-generated method stub
-		return null;
+		return listMeta.get(position);
 	}
 
 	@Override
